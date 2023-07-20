@@ -1,4 +1,4 @@
-[2023-07-20 11:07:52][base_learner.py:338][INFO] [RANK0]: DI-engine DRL Policy
+[2023-07-20 14:17:29][base_learner.py:338][INFO] [RANK0]: DI-engine DRL Policy
 DQN(
   (encoder): FCEncoder(
     (act): ReLU()
@@ -31,9 +31,9 @@ DQN(
     )
   )
 )
-[2023-07-20 11:07:52][base_learner.py:338][INFO] [RANK0]: learner save ckpt in ./cartpole_dqn_seed0/ckpt\ckpt_best.pth.tar
-[2023-07-20 11:07:53][base_learner.py:338][INFO] [RANK0]: === Training Iteration 0 Result ===
-[2023-07-20 11:07:53][learner_hook.py:224][INFO] 
+[2023-07-20 14:17:29][base_learner.py:338][INFO] [RANK0]: learner save ckpt in ./cartpole_dqn_seed0/ckpt\ckpt_best.pth.tar
+[2023-07-20 14:17:29][base_learner.py:338][INFO] [RANK0]: === Training Iteration 0 Result ===
+[2023-07-20 14:17:29][learner_hook.py:224][INFO] 
 +-------+------------+----------------+-------------+--------------------+
 | Name  | cur_lr_avg | total_loss_avg | q_value_avg | target_q_value_avg |
 +-------+------------+----------------+-------------+--------------------+
@@ -41,10 +41,10 @@ DQN(
 +-------+------------+----------------+-------------+--------------------+
 
 
-[2023-07-20 11:07:53][base_learner.py:338][INFO] [RANK0]: learner save ckpt in ./cartpole_dqn_seed0/ckpt\iteration_0.pth.tar
-[2023-07-20 11:07:55][base_learner.py:338][INFO] [RANK0]: learner save ckpt in ./cartpole_dqn_seed0/ckpt\ckpt_best.pth.tar
-[2023-07-20 11:07:55][base_learner.py:338][INFO] [RANK0]: === Training Iteration 100 Result ===
-[2023-07-20 11:07:55][learner_hook.py:224][INFO] 
+[2023-07-20 14:17:29][base_learner.py:338][INFO] [RANK0]: learner save ckpt in ./cartpole_dqn_seed0/ckpt\iteration_0.pth.tar
+[2023-07-20 14:17:30][base_learner.py:338][INFO] [RANK0]: learner save ckpt in ./cartpole_dqn_seed0/ckpt\ckpt_best.pth.tar
+[2023-07-20 14:17:30][base_learner.py:338][INFO] [RANK0]: === Training Iteration 100 Result ===
+[2023-07-20 14:17:30][learner_hook.py:224][INFO] 
 +-------+------------+----------------+-------------+--------------------+
 | Name  | cur_lr_avg | total_loss_avg | q_value_avg | target_q_value_avg |
 +-------+------------+----------------+-------------+--------------------+
@@ -52,9 +52,9 @@ DQN(
 +-------+------------+----------------+-------------+--------------------+
 
 
-[2023-07-20 11:07:57][base_learner.py:338][INFO] [RANK0]: learner save ckpt in ./cartpole_dqn_seed0/ckpt\ckpt_best.pth.tar
-[2023-07-20 11:07:57][base_learner.py:338][INFO] [RANK0]: === Training Iteration 200 Result ===
-[2023-07-20 11:07:57][learner_hook.py:224][INFO] 
+[2023-07-20 14:17:31][base_learner.py:338][INFO] [RANK0]: learner save ckpt in ./cartpole_dqn_seed0/ckpt\ckpt_best.pth.tar
+[2023-07-20 14:17:31][base_learner.py:338][INFO] [RANK0]: === Training Iteration 200 Result ===
+[2023-07-20 14:17:31][learner_hook.py:224][INFO] 
 +-------+------------+----------------+-------------+--------------------+
 | Name  | cur_lr_avg | total_loss_avg | q_value_avg | target_q_value_avg |
 +-------+------------+----------------+-------------+--------------------+
@@ -62,9 +62,9 @@ DQN(
 +-------+------------+----------------+-------------+--------------------+
 
 
-[2023-07-20 11:07:58][base_learner.py:338][INFO] [RANK0]: learner save ckpt in ./cartpole_dqn_seed0/ckpt\ckpt_best.pth.tar
-[2023-07-20 11:07:59][base_learner.py:338][INFO] [RANK0]: === Training Iteration 300 Result ===
-[2023-07-20 11:07:59][learner_hook.py:224][INFO] 
+[2023-07-20 14:17:32][base_learner.py:338][INFO] [RANK0]: learner save ckpt in ./cartpole_dqn_seed0/ckpt\ckpt_best.pth.tar
+[2023-07-20 14:17:32][base_learner.py:338][INFO] [RANK0]: === Training Iteration 300 Result ===
+[2023-07-20 14:17:32][learner_hook.py:224][INFO] 
 +-------+------------+----------------+-------------+--------------------+
 | Name  | cur_lr_avg | total_loss_avg | q_value_avg | target_q_value_avg |
 +-------+------------+----------------+-------------+--------------------+
@@ -72,8 +72,8 @@ DQN(
 +-------+------------+----------------+-------------+--------------------+
 
 
-[2023-07-20 11:08:00][base_learner.py:338][INFO] [RANK0]: === Training Iteration 400 Result ===
-[2023-07-20 11:08:00][learner_hook.py:224][INFO] 
+[2023-07-20 14:17:33][base_learner.py:338][INFO] [RANK0]: === Training Iteration 400 Result ===
+[2023-07-20 14:17:33][learner_hook.py:224][INFO] 
 +-------+------------+----------------+-------------+--------------------+
 | Name  | cur_lr_avg | total_loss_avg | q_value_avg | target_q_value_avg |
 +-------+------------+----------------+-------------+--------------------+
@@ -81,9 +81,9 @@ DQN(
 +-------+------------+----------------+-------------+--------------------+
 
 
-[2023-07-20 11:08:02][base_learner.py:338][INFO] [RANK0]: learner save ckpt in ./cartpole_dqn_seed0/ckpt\ckpt_best.pth.tar
-[2023-07-20 11:08:02][base_learner.py:338][INFO] [RANK0]: === Training Iteration 500 Result ===
-[2023-07-20 11:08:02][learner_hook.py:224][INFO] 
+[2023-07-20 14:17:34][base_learner.py:338][INFO] [RANK0]: learner save ckpt in ./cartpole_dqn_seed0/ckpt\ckpt_best.pth.tar
+[2023-07-20 14:17:34][base_learner.py:338][INFO] [RANK0]: === Training Iteration 500 Result ===
+[2023-07-20 14:17:34][learner_hook.py:224][INFO] 
 +-------+------------+----------------+-------------+--------------------+
 | Name  | cur_lr_avg | total_loss_avg | q_value_avg | target_q_value_avg |
 +-------+------------+----------------+-------------+--------------------+
@@ -91,9 +91,9 @@ DQN(
 +-------+------------+----------------+-------------+--------------------+
 
 
-[2023-07-20 11:08:03][base_learner.py:338][INFO] [RANK0]: learner save ckpt in ./cartpole_dqn_seed0/ckpt\ckpt_best.pth.tar
-[2023-07-20 11:08:04][base_learner.py:338][INFO] [RANK0]: === Training Iteration 600 Result ===
-[2023-07-20 11:08:04][learner_hook.py:224][INFO] 
+[2023-07-20 14:17:34][base_learner.py:338][INFO] [RANK0]: learner save ckpt in ./cartpole_dqn_seed0/ckpt\ckpt_best.pth.tar
+[2023-07-20 14:17:35][base_learner.py:338][INFO] [RANK0]: === Training Iteration 600 Result ===
+[2023-07-20 14:17:35][learner_hook.py:224][INFO] 
 +-------+------------+----------------+-------------+--------------------+
 | Name  | cur_lr_avg | total_loss_avg | q_value_avg | target_q_value_avg |
 +-------+------------+----------------+-------------+--------------------+
@@ -101,10 +101,10 @@ DQN(
 +-------+------------+----------------+-------------+--------------------+
 
 
-[2023-07-20 11:08:05][base_learner.py:338][INFO] [RANK0]: learner save ckpt in ./cartpole_dqn_seed0/ckpt\ckpt_best.pth.tar
-[2023-07-20 11:08:06][base_learner.py:338][INFO] [RANK0]: learner save ckpt in ./cartpole_dqn_seed0/ckpt\ckpt_best.pth.tar
-[2023-07-20 11:08:06][base_learner.py:338][INFO] [RANK0]: learner save ckpt in ./cartpole_dqn_seed0/ckpt\iteration_680.pth.tar
-[2023-07-20 11:08:40][base_learner.py:338][INFO] [RANK0]: DI-engine DRL Policy
+[2023-07-20 14:17:35][base_learner.py:338][INFO] [RANK0]: learner save ckpt in ./cartpole_dqn_seed0/ckpt\ckpt_best.pth.tar
+[2023-07-20 14:17:36][base_learner.py:338][INFO] [RANK0]: learner save ckpt in ./cartpole_dqn_seed0/ckpt\ckpt_best.pth.tar
+[2023-07-20 14:17:36][base_learner.py:338][INFO] [RANK0]: learner save ckpt in ./cartpole_dqn_seed0/ckpt\iteration_680.pth.tar
+[2023-07-20 14:17:56][base_learner.py:338][INFO] [RANK0]: DI-engine DRL Policy
 DiscreteBC(
   (encoder): FCEncoder(
     (act): ReLU()
@@ -137,13 +137,13 @@ DiscreteBC(
     )
   )
 )
-[2023-07-20 11:08:45][base_learner.py:338][INFO] [RANK0]: learner save ckpt in ./cartpole_bc_seed0/ckpt\ckpt_best.pth.tar
-[2023-07-20 11:08:45][base_learner.py:338][INFO] [RANK0]: === Training Iteration 0 Result ===
-[2023-07-20 11:08:45][learner_hook.py:224][INFO] 
+[2023-07-20 14:17:58][base_learner.py:338][INFO] [RANK0]: learner save ckpt in ./cartpole_bc_seed0/ckpt\ckpt_best.pth.tar
+[2023-07-20 14:17:58][base_learner.py:338][INFO] [RANK0]: === Training Iteration 0 Result ===
+[2023-07-20 14:17:58][learner_hook.py:224][INFO] 
 +-------+------------+----------------+------------------+-------------------+
 | Name  | cur_lr_avg | total_loss_avg | forward_time_avg | backward_time_avg |
 +-------+------------+----------------+------------------+-------------------+
-| Value | 0.010000   | 0.693856       | 0.014947         | 0.013281          |
+| Value | 0.010000   | 0.693856       | 0.007980         | 0.006648          |
 +-------+------------+----------------+------------------+-------------------+
 +-------+---------------+
 | Name  | sync_time_avg |
@@ -151,15 +151,15 @@ DiscreteBC(
 | Value | 0.000000      |
 +-------+---------------+
 
-[2023-07-20 11:08:45][base_learner.py:338][INFO] [RANK0]: learner save ckpt in ./cartpole_bc_seed0/ckpt\iteration_0.pth.tar
-[2023-07-20 11:08:52][base_learner.py:338][INFO] [RANK0]: learner save ckpt in ./cartpole_bc_seed0/ckpt\ckpt_best.pth.tar
-[2023-07-20 11:08:58][base_learner.py:338][INFO] [RANK0]: learner save ckpt in ./cartpole_bc_seed0/ckpt\ckpt_best.pth.tar
-[2023-07-20 11:08:58][base_learner.py:338][INFO] [RANK0]: === Training Iteration 100 Result ===
-[2023-07-20 11:08:58][learner_hook.py:224][INFO] 
+[2023-07-20 14:17:58][base_learner.py:338][INFO] [RANK0]: learner save ckpt in ./cartpole_bc_seed0/ckpt\iteration_0.pth.tar
+[2023-07-20 14:18:03][base_learner.py:338][INFO] [RANK0]: learner save ckpt in ./cartpole_bc_seed0/ckpt\ckpt_best.pth.tar
+[2023-07-20 14:18:07][base_learner.py:338][INFO] [RANK0]: learner save ckpt in ./cartpole_bc_seed0/ckpt\ckpt_best.pth.tar
+[2023-07-20 14:18:07][base_learner.py:338][INFO] [RANK0]: === Training Iteration 100 Result ===
+[2023-07-20 14:18:07][learner_hook.py:224][INFO] 
 +-------+------------+----------------+------------------+-------------------+
 | Name  | cur_lr_avg | total_loss_avg | forward_time_avg | backward_time_avg |
 +-------+------------+----------------+------------------+-------------------+
-| Value | 0.010000   | 0.387104       | 0.000907         | 0.001814          |
+| Value | 0.010000   | 0.387104       | 0.000453         | 0.001088          |
 +-------+------------+----------------+------------------+-------------------+
 +-------+---------------+
 | Name  | sync_time_avg |
@@ -167,6 +167,6 @@ DiscreteBC(
 | Value | 0.000000      |
 +-------+---------------+
 
-[2023-07-20 11:09:05][base_learner.py:338][INFO] [RANK0]: learner save ckpt in ./cartpole_bc_seed0/ckpt\ckpt_best.pth.tar
-[2023-07-20 11:09:11][base_learner.py:338][INFO] [RANK0]: learner save ckpt in ./cartpole_bc_seed0/ckpt\ckpt_best.pth.tar
-[2023-07-20 11:09:11][base_learner.py:338][INFO] [RANK0]: learner save ckpt in ./cartpole_bc_seed0/ckpt\iteration_160.pth.tar
+[2023-07-20 14:18:11][base_learner.py:338][INFO] [RANK0]: learner save ckpt in ./cartpole_bc_seed0/ckpt\ckpt_best.pth.tar
+[2023-07-20 14:18:16][base_learner.py:338][INFO] [RANK0]: learner save ckpt in ./cartpole_bc_seed0/ckpt\ckpt_best.pth.tar
+[2023-07-20 14:18:16][base_learner.py:338][INFO] [RANK0]: learner save ckpt in ./cartpole_bc_seed0/ckpt\iteration_160.pth.tar

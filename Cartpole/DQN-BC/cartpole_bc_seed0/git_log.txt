@@ -1,4 +1,340 @@
-2c301e1
+471a9f2
+
+commit 471a9f2df9a5c940540f801bb3ff32a46c2260b9
+Author: shenpengfii <2134452828@qq.com>
+Date:   Thu Jul 20 11:51:13 2023 +0800
+
+    fill test result of DQN-based models
+
+ .../__pycache__/cartpole_bc_config.cpython-38.pyc  |   Bin 0 -> 1103 bytes
+ Cartpole/DQN-BC/cartpole_bc_config.py              |    45 +
+ Cartpole/DQN-BC/cartpole_bc_main.py                |   123 +
+ .../cartpole_bc_seed0/ckpt/ckpt_best.pth.tar       |   Bin 0 -> 273817 bytes
+ .../cartpole_bc_seed0/ckpt/iteration_0.pth.tar     |   Bin 0 -> 273933 bytes
+ .../cartpole_bc_seed0/ckpt/iteration_160.pth.tar   |   Bin 0 -> 274049 bytes
+ .../cartpole_bc_seed0/formatted_total_config.py    |   136 +
+ Cartpole/DQN-BC/cartpole_bc_seed0/git_diff.txt     |     0
+ Cartpole/DQN-BC/cartpole_bc_seed0/git_log.txt      |  1163 +
+ .../log/evaluator/evaluator_logger.txt             |   118 +
+ .../log/learner/learner_logger.txt                 |    66 +
+ .../events.out.tfevents.1689822512.DESKTOP-NA73751 |   Bin 0 -> 8682 bytes
+ Cartpole/DQN-BC/cartpole_bc_seed0/total_config.py  |   132 +
+ .../rl-video-2119909653280-episode-0.meta.json}    |     2 +-
+ .../video/rl-video-2119909653280-episode-0.mp4}    |   Bin
+ .../rl-video-2119909653280-episode-1.meta.json}    |     2 +-
+ .../video/rl-video-2119909653280-episode-1.mp4     |   Bin 0 -> 6160 bytes
+ .../rl-video-2119909653280-episode-2.meta.json     |     1 +
+ .../video/rl-video-2119909653280-episode-2.mp4     |   Bin 0 -> 7496 bytes
+ .../rl-video-2119909653280-episode-3.meta.json     |     1 +
+ .../video/rl-video-2119909653280-episode-3.mp4     |   Bin 0 -> 7496 bytes
+ .../rl-video-2119909653280-episode-4.meta.json     |     1 +
+ .../video/rl-video-2119909653280-episode-4.mp4     |   Bin 0 -> 16613 bytes
+ .../rl-video-2119909653280-episode-5.meta.json     |     1 +
+ .../video/rl-video-2119909653280-episode-5.mp4     |   Bin 0 -> 14344 bytes
+ .../rl-video-2119909653280-episode-6.meta.json     |     1 +
+ .../video/rl-video-2119909653280-episode-6.mp4     |   Bin 0 -> 13862 bytes
+ .../rl-video-2119909653280-episode-7.meta.json     |     1 +
+ .../video/rl-video-2119909653280-episode-7.mp4     |   Bin 0 -> 1850 bytes
+ .../rl-video-2119909653856-episode-0.meta.json}    |     2 +-
+ .../video/rl-video-2119909653856-episode-0.mp4}    |   Bin
+ .../rl-video-2119909653856-episode-1.meta.json}    |     2 +-
+ .../video/rl-video-2119909653856-episode-1.mp4     |   Bin 0 -> 13155 bytes
+ .../rl-video-2119909653856-episode-2.meta.json     |     1 +
+ .../video/rl-video-2119909653856-episode-2.mp4     |   Bin 0 -> 14750 bytes
+ .../rl-video-2119909653856-episode-3.meta.json     |     1 +
+ .../video/rl-video-2119909653856-episode-3.mp4     |   Bin 0 -> 12787 bytes
+ .../rl-video-2119909653856-episode-4.meta.json     |     1 +
+ .../video/rl-video-2119909653856-episode-4.mp4     |   Bin 0 -> 12617 bytes
+ .../rl-video-2119909653856-episode-5.meta.json     |     1 +
+ .../video/rl-video-2119909653856-episode-5.mp4     |   Bin 0 -> 2779 bytes
+ .../rl-video-2119911187696-episode-0.meta.json}    |     2 +-
+ .../video/rl-video-2119911187696-episode-0.mp4     |   Bin 0 -> 3216 bytes
+ .../rl-video-2119911187696-episode-1.meta.json}    |     2 +-
+ .../video/rl-video-2119911187696-episode-1.mp4     |   Bin 0 -> 13610 bytes
+ .../rl-video-2119911187696-episode-2.meta.json     |     1 +
+ .../video/rl-video-2119911187696-episode-2.mp4     |   Bin 0 -> 13204 bytes
+ .../rl-video-2119911187696-episode-3.meta.json     |     1 +
+ .../video/rl-video-2119911187696-episode-3.mp4     |   Bin 0 -> 16428 bytes
+ .../rl-video-2119911187696-episode-4.meta.json     |     1 +
+ .../video/rl-video-2119911187696-episode-4.mp4     |   Bin 0 -> 11759 bytes
+ .../rl-video-2119911187696-episode-5.meta.json     |     1 +
+ .../video/rl-video-2119911187696-episode-5.mp4     |   Bin 0 -> 4039 bytes
+ .../rl-video-2119911188464-episode-0.meta.json}    |     2 +-
+ .../video/rl-video-2119911188464-episode-0.mp4     |   Bin 0 -> 2968 bytes
+ .../rl-video-2119911188464-episode-1.meta.json     |     1 +
+ .../video/rl-video-2119911188464-episode-1.mp4     |   Bin 0 -> 10769 bytes
+ .../rl-video-2119911188464-episode-2.meta.json     |     1 +
+ .../video/rl-video-2119911188464-episode-2.mp4     |   Bin 0 -> 14386 bytes
+ .../rl-video-2119911188464-episode-3.meta.json     |     1 +
+ .../video/rl-video-2119911188464-episode-3.mp4     |   Bin 0 -> 11928 bytes
+ .../rl-video-2119911188464-episode-4.meta.json     |     1 +
+ .../video/rl-video-2119911188464-episode-4.mp4     |   Bin 0 -> 11519 bytes
+ .../rl-video-2119911188464-episode-5.meta.json     |     1 +
+ .../video/rl-video-2119911188464-episode-5.mp4     |   Bin 0 -> 6595 bytes
+ .../rl-video-2119911189232-episode-0.meta.json     |     1 +
+ .../video/rl-video-2119911189232-episode-0.mp4}    |   Bin
+ .../rl-video-2119911189232-episode-1.meta.json     |     1 +
+ .../video/rl-video-2119911189232-episode-1.mp4     |   Bin 0 -> 12080 bytes
+ .../rl-video-2119911189232-episode-2.meta.json     |     1 +
+ .../video/rl-video-2119911189232-episode-2.mp4     |   Bin 0 -> 13702 bytes
+ .../rl-video-2119911189232-episode-3.meta.json     |     1 +
+ .../video/rl-video-2119911189232-episode-3.mp4     |   Bin 0 -> 13029 bytes
+ .../rl-video-2119911189232-episode-4.meta.json     |     1 +
+ .../video/rl-video-2119911189232-episode-4.mp4     |   Bin 0 -> 14679 bytes
+ .../rl-video-2119911189232-episode-5.meta.json     |     1 +
+ .../video/rl-video-2119911189232-episode-5.mp4     |   Bin 0 -> 10441 bytes
+ .../collect_demo_data_config.py                    |   114 +
+ .../formatted_collect_demo_data_config.py          |     2 +-
+ .../DQN-BC/cartpole_dqn_bc_collect/git_diff.txt    |     0
+ .../DQN-BC/cartpole_dqn_bc_collect/git_log.txt     |  1163 +
+ .../cartpole_dqn_seed0/ckpt/ckpt_best.pth.tar      |   Bin 0 -> 564035 bytes
+ .../cartpole_dqn_seed0/ckpt/iteration_0.pth.tar    |   Bin 0 -> 564179 bytes
+ .../cartpole_dqn_seed0/ckpt/iteration_680.pth.tar  |   Bin 0 -> 564323 bytes
+ .../cartpole_dqn_seed0/formatted_total_config.py   |   115 +
+ Cartpole/DQN-BC/cartpole_dqn_seed0/git_diff.txt    |     0
+ Cartpole/DQN-BC/cartpole_dqn_seed0/git_log.txt     |  1163 +
+ .../log/collector/collector_logger.txt             |   108 +
+ .../log/evaluator/evaluator_logger.txt             |   534 +
+ .../log/learner/learner_logger.txt                 |   172 +
+ .../events.out.tfevents.1689822472.DESKTOP-NA73751 |   Bin 0 -> 42519 bytes
+ Cartpole/DQN-BC/cartpole_dqn_seed0/result.pkl      |   Bin 0 -> 278 bytes
+ Cartpole/DQN-BC/cartpole_dqn_seed0/total_config.py |   114 +
+ .../log/collector/collector_logger.txt             |     0
+ Cartpole/DQN-BC/expert_data_dqn_bc.pkl             |   Bin 0 -> 12511888 bytes
+ .../cartpole_dqn_gail_config.cpython-38.pyc        |   Bin 1780 -> 1791 bytes
+ Cartpole/DQN-GAIL/cartpole_dqn_gail_config.py      |     6 +-
+ .../cartpole_dqn_gail_seed0/ckpt/ckpt_best.pth.tar |   Bin 564035 -> 564035 bytes
+ .../ckpt/iteration_168.pth.tar                     |   Bin 564323 -> 564323 bytes
+ .../cartpole_dqn_gail_seed0/expert_data.pkl        |   Bin 1251331 -> 1251331 bytes
+ .../DQN-GAIL/cartpole_dqn_gail_seed0/git_diff.txt  |  2165 ++
+ .../DQN-GAIL/cartpole_dqn_gail_seed0/git_log.txt   |  1163 +
+ .../log/buffer/buffer_logger.txt                   |    18 +-
+ .../log/collector/collector_logger.txt             |    12 +-
+ .../log/evaluator/evaluator_logger.txt             |   236 +-
+ .../log/learner/learner_logger.txt                 |    32 +-
+ .../events.out.tfevents.1689733158.DESKTOP-NA73751 |   Bin 366311 -> 0 bytes
+ .../events.out.tfevents.1689822966.DESKTOP-NA73751 |   Bin 0 -> 366311 bytes
+ .../reward_model/ckpt/ckpt_best.pth.tar            |   Bin 3523 -> 3523 bytes
+ .../reward_model/ckpt/ckpt_last.pth.tar            |   Bin 3523 -> 3523 bytes
+ .../rl-video-1844552345776-episode-0.meta.json     |     1 +
+ ...-0.mp4 => rl-video-1844552345776-episode-0.mp4} |   Bin
+ ... => rl-video-1844552345776-episode-1.meta.json} |     2 +-
+ ...-1.mp4 => rl-video-1844552345776-episode-1.mp4} |   Bin
+ ...=> rl-video-1844552345776-episode-10.meta.json} |     2 +-
+ ...0.mp4 => rl-video-1844552345776-episode-10.mp4} |   Bin
+ ...=> rl-video-1844552345776-episode-11.meta.json} |     2 +-
+ ...1.mp4 => rl-video-1844552345776-episode-11.mp4} |   Bin
+ ...=> rl-video-1844552345776-episode-12.meta.json} |     2 +-
+ ...2.mp4 => rl-video-1844552345776-episode-12.mp4} |   Bin
+ ...=> rl-video-1844552345776-episode-13.meta.json} |     2 +-
+ ...3.mp4 => rl-video-1844552345776-episode-13.mp4} |   Bin
+ ...=> rl-video-1844552345776-episode-14.meta.json} |     2 +-
+ ...4.mp4 => rl-video-1844552345776-episode-14.mp4} |   Bin
+ ...=> rl-video-1844552345776-episode-15.meta.json} |     2 +-
+ ...5.mp4 => rl-video-1844552345776-episode-15.mp4} |   Bin
+ ...=> rl-video-1844552345776-episode-16.meta.json} |     2 +-
+ ...6.mp4 => rl-video-1844552345776-episode-16.mp4} |   Bin
+ ...=> rl-video-1844552345776-episode-17.meta.json} |     2 +-
+ ...7.mp4 => rl-video-1844552345776-episode-17.mp4} |   Bin
+ ... => rl-video-1844552345776-episode-2.meta.json} |     2 +-
+ ...-2.mp4 => rl-video-1844552345776-episode-2.mp4} |   Bin
+ ... => rl-video-1844552345776-episode-3.meta.json} |     2 +-
+ ...-3.mp4 => rl-video-1844552345776-episode-3.mp4} |   Bin
+ ... => rl-video-1844552345776-episode-4.meta.json} |     2 +-
+ ...-4.mp4 => rl-video-1844552345776-episode-4.mp4} |   Bin
+ ... => rl-video-1844552345776-episode-5.meta.json} |     2 +-
+ ...-5.mp4 => rl-video-1844552345776-episode-5.mp4} |   Bin
+ ... => rl-video-1844552345776-episode-6.meta.json} |     2 +-
+ ...-6.mp4 => rl-video-1844552345776-episode-6.mp4} |   Bin
+ ... => rl-video-1844552345776-episode-7.meta.json} |     2 +-
+ ...-7.mp4 => rl-video-1844552345776-episode-7.mp4} |   Bin
+ ... => rl-video-1844552345776-episode-8.meta.json} |     2 +-
+ ...-8.mp4 => rl-video-1844552345776-episode-8.mp4} |   Bin
+ ... => rl-video-1844552345776-episode-9.meta.json} |     2 +-
+ ...-9.mp4 => rl-video-1844552345776-episode-9.mp4} |   Bin
+ .../rl-video-1844552347552-episode-0.meta.json     |     1 +
+ ...-0.mp4 => rl-video-1844552347552-episode-0.mp4} |   Bin
+ .../rl-video-1844552347552-episode-1.meta.json     |     1 +
+ ...-1.mp4 => rl-video-1844552347552-episode-1.mp4} |   Bin
+ ...=> rl-video-1844552347552-episode-10.meta.json} |     2 +-
+ ...0.mp4 => rl-video-1844552347552-episode-10.mp4} |   Bin
+ ...=> rl-video-1844552347552-episode-11.meta.json} |     2 +-
+ ...1.mp4 => rl-video-1844552347552-episode-11.mp4} |   Bin
+ ...=> rl-video-1844552347552-episode-12.meta.json} |     2 +-
+ ...2.mp4 => rl-video-1844552347552-episode-12.mp4} |   Bin
+ ...=> rl-video-1844552347552-episode-13.meta.json} |     2 +-
+ ...3.mp4 => rl-video-1844552347552-episode-13.mp4} |   Bin
+ ...=> rl-video-1844552347552-episode-14.meta.json} |     2 +-
+ ...4.mp4 => rl-video-1844552347552-episode-14.mp4} |   Bin
+ ...=> rl-video-1844552347552-episode-15.meta.json} |     2 +-
+ ...5.mp4 => rl-video-1844552347552-episode-15.mp4} |   Bin
+ ...=> rl-video-1844552347552-episode-16.meta.json} |     2 +-
+ ...6.mp4 => rl-video-1844552347552-episode-16.mp4} |   Bin
+ ...=> rl-video-1844552347552-episode-17.meta.json} |     2 +-
+ ...7.mp4 => rl-video-1844552347552-episode-17.mp4} |   Bin
+ ...=> rl-video-1844552347552-episode-18.meta.json} |     2 +-
+ ...8.mp4 => rl-video-1844552347552-episode-18.mp4} |   Bin
+ ... => rl-video-1844552347552-episode-2.meta.json} |     2 +-
+ ...-2.mp4 => rl-video-1844552347552-episode-2.mp4} |   Bin
+ ... => rl-video-1844552347552-episode-3.meta.json} |     2 +-
+ ...-6.mp4 => rl-video-1844552347552-episode-3.mp4} |   Bin
+ ... => rl-video-1844552347552-episode-4.meta.json} |     2 +-
+ ...-4.mp4 => rl-video-1844552347552-episode-4.mp4} |   Bin
+ ... => rl-video-1844552347552-episode-5.meta.json} |     2 +-
+ ...-5.mp4 => rl-video-1844552347552-episode-5.mp4} |   Bin
+ ... => rl-video-1844552347552-episode-6.meta.json} |     2 +-
+ .../video/rl-video-1844552347552-episode-6.mp4     |   Bin 0 -> 3188 bytes
+ ... => rl-video-1844552347552-episode-7.meta.json} |     2 +-
+ ...-7.mp4 => rl-video-1844552347552-episode-7.mp4} |   Bin
+ ... => rl-video-1844552347552-episode-8.meta.json} |     2 +-
+ ...-8.mp4 => rl-video-1844552347552-episode-8.mp4} |   Bin
+ ... => rl-video-1844552347552-episode-9.meta.json} |     2 +-
+ ...-9.mp4 => rl-video-1844552347552-episode-9.mp4} |   Bin
+ .../rl-video-1844554265744-episode-0.meta.json     |     1 +
+ ...-0.mp4 => rl-video-1844554265744-episode-0.mp4} |   Bin
+ .../rl-video-1844554265744-episode-1.meta.json     |     1 +
+ ...-1.mp4 => rl-video-1844554265744-episode-1.mp4} |   Bin
+ ...=> rl-video-1844554265744-episode-10.meta.json} |     2 +-
+ ...0.mp4 => rl-video-1844554265744-episode-10.mp4} |   Bin
+ ...=> rl-video-1844554265744-episode-11.meta.json} |     2 +-
+ ...1.mp4 => rl-video-1844554265744-episode-11.mp4} |   Bin
+ ...=> rl-video-1844554265744-episode-12.meta.json} |     2 +-
+ ...2.mp4 => rl-video-1844554265744-episode-12.mp4} |   Bin
+ ...=> rl-video-1844554265744-episode-13.meta.json} |     2 +-
+ ...3.mp4 => rl-video-1844554265744-episode-13.mp4} |   Bin
+ ...=> rl-video-1844554265744-episode-14.meta.json} |     2 +-
+ ...4.mp4 => rl-video-1844554265744-episode-14.mp4} |   Bin
+ ...=> rl-video-1844554265744-episode-15.meta.json} |     2 +-
+ ...5.mp4 => rl-video-1844554265744-episode-15.mp4} |   Bin
+ ...=> rl-video-1844554265744-episode-16.meta.json} |     2 +-
+ ...6.mp4 => rl-video-1844554265744-episode-16.mp4} |   Bin
+ ...=> rl-video-1844554265744-episode-17.meta.json} |     2 +-
+ ...7.mp4 => rl-video-1844554265744-episode-17.mp4} |   Bin
+ ... => rl-video-1844554265744-episode-2.meta.json} |     2 +-
+ ...-2.mp4 => rl-video-1844554265744-episode-2.mp4} |   Bin
+ ... => rl-video-1844554265744-episode-3.meta.json} |     2 +-
+ ...-6.mp4 => rl-video-1844554265744-episode-3.mp4} |   Bin
+ ... => rl-video-1844554265744-episode-4.meta.json} |     2 +-
+ ...-4.mp4 => rl-video-1844554265744-episode-4.mp4} |   Bin
+ ... => rl-video-1844554265744-episode-5.meta.json} |     2 +-
+ ...-5.mp4 => rl-video-1844554265744-episode-5.mp4} |   Bin
+ ... => rl-video-1844554265744-episode-6.meta.json} |     2 +-
+ .../video/rl-video-1844554265744-episode-6.mp4     |   Bin 0 -> 3092 bytes
+ ... => rl-video-1844554265744-episode-7.meta.json} |     2 +-
+ ...-7.mp4 => rl-video-1844554265744-episode-7.mp4} |   Bin
+ ... => rl-video-1844554265744-episode-8.meta.json} |     2 +-
+ ...-8.mp4 => rl-video-1844554265744-episode-8.mp4} |   Bin
+ ... => rl-video-1844554265744-episode-9.meta.json} |     2 +-
+ ...-9.mp4 => rl-video-1844554265744-episode-9.mp4} |   Bin
+ .../rl-video-1844554267520-episode-0.meta.json     |     1 +
+ ...-0.mp4 => rl-video-1844554267520-episode-0.mp4} |   Bin
+ .../rl-video-1844554267520-episode-1.meta.json     |     1 +
+ ...-1.mp4 => rl-video-1844554267520-episode-1.mp4} |   Bin
+ ...=> rl-video-1844554267520-episode-10.meta.json} |     2 +-
+ ...0.mp4 => rl-video-1844554267520-episode-10.mp4} |   Bin
+ ...=> rl-video-1844554267520-episode-11.meta.json} |     2 +-
+ ...1.mp4 => rl-video-1844554267520-episode-11.mp4} |   Bin
+ ...=> rl-video-1844554267520-episode-12.meta.json} |     2 +-
+ ...2.mp4 => rl-video-1844554267520-episode-12.mp4} |   Bin
+ ...=> rl-video-1844554267520-episode-13.meta.json} |     2 +-
+ ...3.mp4 => rl-video-1844554267520-episode-13.mp4} |   Bin
+ ...=> rl-video-1844554267520-episode-14.meta.json} |     2 +-
+ ...4.mp4 => rl-video-1844554267520-episode-14.mp4} |   Bin
+ ...=> rl-video-1844554267520-episode-15.meta.json} |     2 +-
+ ...5.mp4 => rl-video-1844554267520-episode-15.mp4} |   Bin
+ ...=> rl-video-1844554267520-episode-16.meta.json} |     2 +-
+ ...6.mp4 => rl-video-1844554267520-episode-16.mp4} |   Bin
+ ...=> rl-video-1844554267520-episode-17.meta.json} |     2 +-
+ ...7.mp4 => rl-video-1844554267520-episode-17.mp4} |   Bin
+ ... => rl-video-1844554267520-episode-2.meta.json} |     2 +-
+ ...-2.mp4 => rl-video-1844554267520-episode-2.mp4} |   Bin
+ ... => rl-video-1844554267520-episode-3.meta.json} |     2 +-
+ ...-3.mp4 => rl-video-1844554267520-episode-3.mp4} |   Bin
+ ... => rl-video-1844554267520-episode-4.meta.json} |     2 +-
+ ...-4.mp4 => rl-video-1844554267520-episode-4.mp4} |   Bin
+ ... => rl-video-1844554267520-episode-5.meta.json} |     2 +-
+ ...-5.mp4 => rl-video-1844554267520-episode-5.mp4} |   Bin
+ ... => rl-video-1844554267520-episode-6.meta.json} |     2 +-
+ ...-6.mp4 => rl-video-1844554267520-episode-6.mp4} |   Bin
+ ... => rl-video-1844554267520-episode-7.meta.json} |     2 +-
+ ...-7.mp4 => rl-video-1844554267520-episode-7.mp4} |   Bin
+ ... => rl-video-1844554267520-episode-8.meta.json} |     2 +-
+ ...-8.mp4 => rl-video-1844554267520-episode-8.mp4} |   Bin
+ ... => rl-video-1844554267520-episode-9.meta.json} |     2 +-
+ ...-9.mp4 => rl-video-1844554267520-episode-9.mp4} |   Bin
+ .../rl-video-1844556358800-episode-0.meta.json     |     1 +
+ ...-0.mp4 => rl-video-1844556358800-episode-0.mp4} |   Bin
+ ... => rl-video-1844556358800-episode-1.meta.json} |     2 +-
+ ...-1.mp4 => rl-video-1844556358800-episode-1.mp4} |   Bin
+ ...=> rl-video-1844556358800-episode-10.meta.json} |     2 +-
+ ...0.mp4 => rl-video-1844556358800-episode-10.mp4} |   Bin
+ ...=> rl-video-1844556358800-episode-11.meta.json} |     2 +-
+ ...1.mp4 => rl-video-1844556358800-episode-11.mp4} |   Bin
+ ...=> rl-video-1844556358800-episode-12.meta.json} |     2 +-
+ ...2.mp4 => rl-video-1844556358800-episode-12.mp4} |   Bin
+ ...=> rl-video-1844556358800-episode-13.meta.json} |     2 +-
+ ...3.mp4 => rl-video-1844556358800-episode-13.mp4} |   Bin
+ ...=> rl-video-1844556358800-episode-14.meta.json} |     2 +-
+ ...4.mp4 => rl-video-1844556358800-episode-14.mp4} |   Bin
+ ...=> rl-video-1844556358800-episode-15.meta.json} |     2 +-
+ ...5.mp4 => rl-video-1844556358800-episode-15.mp4} |   Bin
+ ...=> rl-video-1844556358800-episode-16.meta.json} |     2 +-
+ ...6.mp4 => rl-video-1844556358800-episode-16.mp4} |   Bin
+ ...=> rl-video-1844556358800-episode-17.meta.json} |     2 +-
+ .../video/rl-video-1844556358800-episode-17.mp4    |   Bin 0 -> 15639 bytes
+ ...=> rl-video-1844556358800-episode-18.meta.json} |     2 +-
+ ...8.mp4 => rl-video-1844556358800-episode-18.mp4} |   Bin
+ ... => rl-video-1844556358800-episode-2.meta.json} |     2 +-
+ ...-3.mp4 => rl-video-1844556358800-episode-2.mp4} |   Bin
+ ... => rl-video-1844556358800-episode-3.meta.json} |     2 +-
+ ...-6.mp4 => rl-video-1844556358800-episode-3.mp4} |   Bin
+ ... => rl-video-1844556358800-episode-4.meta.json} |     2 +-
+ ...-4.mp4 => rl-video-1844556358800-episode-4.mp4} |   Bin
+ ... => rl-video-1844556358800-episode-5.meta.json} |     2 +-
+ ...-5.mp4 => rl-video-1844556358800-episode-5.mp4} |   Bin
+ ... => rl-video-1844556358800-episode-6.meta.json} |     2 +-
+ .../video/rl-video-1844556358800-episode-6.mp4     |   Bin 0 -> 2867 bytes
+ ... => rl-video-1844556358800-episode-7.meta.json} |     2 +-
+ ...-7.mp4 => rl-video-1844556358800-episode-7.mp4} |   Bin
+ ... => rl-video-1844556358800-episode-8.meta.json} |     2 +-
+ ...-8.mp4 => rl-video-1844556358800-episode-8.mp4} |   Bin
+ ... => rl-video-1844556358800-episode-9.meta.json} |     2 +-
+ ...-9.mp4 => rl-video-1844556358800-episode-9.mp4} |   Bin
+ .../video/rl-video-2502343805200-episode-17.mp4    |   Bin 15340 -> 0 bytes
+ .../rl-video-2502346050240-episode-0.meta.json     |     1 -
+ .../collect_demo_data_config.py                    |     2 +-
+ .../formatted_collect_demo_data_config.py          |   115 +
+ .../cartpole_dqn_seed0_230720_111556/git_diff.txt  |  1886 ++
+ .../cartpole_dqn_seed0_230720_111556/git_log.txt   |  1163 +
+ .../log/collector/collector_logger.txt             |    12 +-
+ .../cartpole_ppo_gail_config.cpython-38.pyc        |   Bin 1991 -> 1981 bytes
+ Cartpole/PPO-GAIL/cartpole_ppo_gail_config.py      |    10 +-
+ .../cartpole_ppo_gail_seed0/ckpt/ckpt_best.pth.tar |   Bin 574041 -> 574041 bytes
+ .../ckpt/iteration_0.pth.tar                       |   Bin 574157 -> 574157 bytes
+ .../ckpt/iteration_1000.pth.tar                    |   Bin 574331 -> 0 bytes
+ .../ckpt/iteration_1050.pth.tar                    |   Bin 574331 -> 0 bytes
+ .../ckpt/iteration_480.pth.tar                     |   Bin 0 -> 574273 bytes
+ .../cartpole_ppo_gail_seed0/expert_data.pkl        |   Bin 19901083 -> 1989844 bytes
+ .../formatted_total_config.py                      |     2 +-
+ .../PPO-GAIL/cartpole_ppo_gail_seed0/git_diff.txt  | 18433 +++++++++---
+ .../PPO-GAIL/cartpole_ppo_gail_seed0/git_log.txt   |   681 +-
+ .../log/buffer/buffer_logger.txt                   |    76 +-
+ .../log/collector/collector_logger.txt             |   250 +-
+ .../log/evaluator/evaluator_logger.txt             |   825 +-
+ .../log/learner/learner_logger.txt                 |   153 +-
+ .../events.out.tfevents.1689773137.DESKTOP-NA73751 |   Bin 1144892 -> 0 bytes
+ .../events.out.tfevents.1689823956.DESKTOP-NA73751 |   Bin 0 -> 697938 bytes
+ .../reward_model/ckpt/ckpt_best.pth.tar            |   Bin 4483 -> 5315 bytes
+ .../reward_model/ckpt/ckpt_last.pth.tar            |   Bin 4483 -> 5315 bytes
+ .../cartpole_ppo_gail_seed0/total_config.py        |    10 +-
+ .../git_diff.txt                                   |  5291 ----
+ .../git_log.txt                                    |   484 -
+ .../collect_demo_data_config.py                    |     2 +-
+ .../formatted_collect_demo_data_config.py          |     2 +-
+ .../git_diff.txt                                   | 29748 +++++++++++++++++++
+ .../git_log.txt                                    |  1163 +
+ .../log/collector/collector_logger.txt             |   250 +-
+ 328 files changed, 58759 insertions(+), 10915 deletions(-)
 
 commit 2c301e13b27c053eada10c3fe6d91d8c22eb4b6e
 Author: shenpengfii <2134452828@qq.com>

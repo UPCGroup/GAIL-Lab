@@ -1,9 +1,9 @@
-[2023-07-20 11:08:44][interaction_serial_evaluator.py:253][INFO] [EVALUATOR]env 0 finish episode, final reward: 8.0000, current episode: 1
-[2023-07-20 11:08:44][interaction_serial_evaluator.py:253][INFO] [EVALUATOR]env 1 finish episode, final reward: 9.0000, current episode: 2
-[2023-07-20 11:08:45][interaction_serial_evaluator.py:253][INFO] [EVALUATOR]env 2 finish episode, final reward: 10.0000, current episode: 3
-[2023-07-20 11:08:45][interaction_serial_evaluator.py:253][INFO] [EVALUATOR]env 3 finish episode, final reward: 10.0000, current episode: 4
-[2023-07-20 11:08:45][interaction_serial_evaluator.py:253][INFO] [EVALUATOR]env 4 finish episode, final reward: 10.0000, current episode: 5
-[2023-07-20 11:08:45][interaction_serial_evaluator.py:279][INFO] 
+[2023-07-20 14:17:58][interaction_serial_evaluator.py:253][INFO] [EVALUATOR]env 0 finish episode, final reward: 8.0000, current episode: 1
+[2023-07-20 14:17:58][interaction_serial_evaluator.py:253][INFO] [EVALUATOR]env 1 finish episode, final reward: 9.0000, current episode: 2
+[2023-07-20 14:17:58][interaction_serial_evaluator.py:253][INFO] [EVALUATOR]env 2 finish episode, final reward: 10.0000, current episode: 3
+[2023-07-20 14:17:58][interaction_serial_evaluator.py:253][INFO] [EVALUATOR]env 3 finish episode, final reward: 10.0000, current episode: 4
+[2023-07-20 14:17:58][interaction_serial_evaluator.py:253][INFO] [EVALUATOR]env 4 finish episode, final reward: 10.0000, current episode: 5
+[2023-07-20 14:17:58][interaction_serial_evaluator.py:279][INFO] 
 +-------+------------+---------------------+---------------+---------------+
 | Name  | train_iter | ckpt_name           | episode_count | envstep_count |
 +-------+------------+---------------------+---------------+---------------+
@@ -12,7 +12,7 @@
 +-------+-------------------------+---------------+---------------------+----------------------+
 | Name  | avg_envstep_per_episode | evaluate_time | avg_envstep_per_sec | avg_time_per_episode |
 +-------+-------------------------+---------------+---------------------+----------------------+
-| Value | 10.000000               | 1.223826      | 40.855483           | 4.085548             |
+| Value | 10.000000               | 0.739980      | 67.569395           | 6.756940             |
 +-------+-------------------------+---------------+---------------------+----------------------+
 +-------+-------------+------------+------------+------------+
 | Name  | reward_mean | reward_std | reward_max | reward_min |
@@ -21,14 +21,14 @@
 +-------+-------------+------------+------------+------------+
 
 
-[2023-07-20 11:08:46][interaction_serial_evaluator.py:253][INFO] [EVALUATOR]env 0 finish episode, final reward: 50.0000, current episode: 1
-[2023-07-20 11:08:49][interaction_serial_evaluator.py:253][INFO] [EVALUATOR]env 0 finish episode, final reward: 70.0000, current episode: 1
-[2023-07-20 11:08:49][interaction_serial_evaluator.py:253][INFO] [EVALUATOR]env 3 finish episode, final reward: 126.0000, current episode: 2
-[2023-07-20 11:08:49][interaction_serial_evaluator.py:253][INFO] [EVALUATOR]env 4 finish episode, final reward: 140.0000, current episode: 3
-[2023-07-20 11:08:51][interaction_serial_evaluator.py:253][INFO] [EVALUATOR]env 0 finish episode, final reward: 70.0000, current episode: 3
-[2023-07-20 11:08:51][interaction_serial_evaluator.py:253][INFO] [EVALUATOR]env 1 finish episode, final reward: 200.0000, current episode: 4
-[2023-07-20 11:08:52][interaction_serial_evaluator.py:253][INFO] [EVALUATOR]env 2 finish episode, final reward: 200.0000, current episode: 5
-[2023-07-20 11:08:52][interaction_serial_evaluator.py:279][INFO] 
+[2023-07-20 14:17:59][interaction_serial_evaluator.py:253][INFO] [EVALUATOR]env 0 finish episode, final reward: 50.0000, current episode: 1
+[2023-07-20 14:18:01][interaction_serial_evaluator.py:253][INFO] [EVALUATOR]env 0 finish episode, final reward: 70.0000, current episode: 1
+[2023-07-20 14:18:01][interaction_serial_evaluator.py:253][INFO] [EVALUATOR]env 3 finish episode, final reward: 126.0000, current episode: 2
+[2023-07-20 14:18:01][interaction_serial_evaluator.py:253][INFO] [EVALUATOR]env 4 finish episode, final reward: 140.0000, current episode: 3
+[2023-07-20 14:18:02][interaction_serial_evaluator.py:253][INFO] [EVALUATOR]env 0 finish episode, final reward: 70.0000, current episode: 3
+[2023-07-20 14:18:03][interaction_serial_evaluator.py:253][INFO] [EVALUATOR]env 1 finish episode, final reward: 200.0000, current episode: 4
+[2023-07-20 14:18:03][interaction_serial_evaluator.py:253][INFO] [EVALUATOR]env 2 finish episode, final reward: 200.0000, current episode: 5
+[2023-07-20 14:18:03][interaction_serial_evaluator.py:279][INFO] 
 +-------+------------+----------------------+---------------+---------------+
 | Name  | train_iter | ckpt_name            | episode_count | envstep_count |
 +-------+------------+----------------------+---------------+---------------+
@@ -37,7 +37,7 @@
 +-------+-------------------------+---------------+---------------------+----------------------+
 | Name  | avg_envstep_per_episode | evaluate_time | avg_envstep_per_sec | avg_time_per_episode |
 +-------+-------------------------+---------------+---------------------+----------------------+
-| Value | 200.000000              | 6.454169      | 154.938625          | 0.774693             |
+| Value | 200.000000              | 4.373994      | 228.624018          | 1.143120             |
 +-------+-------------------------+---------------+---------------------+----------------------+
 +-------+-------------+------------+------------+------------+
 | Name  | reward_mean | reward_std | reward_max | reward_min |
@@ -46,12 +46,12 @@
 +-------+-------------+------------+------------+------------+
 
 
-[2023-07-20 11:08:55][interaction_serial_evaluator.py:253][INFO] [EVALUATOR]env 3 finish episode, final reward: 171.0000, current episode: 1
-[2023-07-20 11:08:55][interaction_serial_evaluator.py:253][INFO] [EVALUATOR]env 4 finish episode, final reward: 161.0000, current episode: 2
-[2023-07-20 11:08:57][interaction_serial_evaluator.py:253][INFO] [EVALUATOR]env 2 finish episode, final reward: 152.0000, current episode: 3
-[2023-07-20 11:08:57][interaction_serial_evaluator.py:253][INFO] [EVALUATOR]env 1 finish episode, final reward: 177.0000, current episode: 4
-[2023-07-20 11:08:58][interaction_serial_evaluator.py:253][INFO] [EVALUATOR]env 0 finish episode, final reward: 200.0000, current episode: 5
-[2023-07-20 11:08:58][interaction_serial_evaluator.py:279][INFO] 
+[2023-07-20 14:18:05][interaction_serial_evaluator.py:253][INFO] [EVALUATOR]env 3 finish episode, final reward: 171.0000, current episode: 1
+[2023-07-20 14:18:05][interaction_serial_evaluator.py:253][INFO] [EVALUATOR]env 4 finish episode, final reward: 161.0000, current episode: 2
+[2023-07-20 14:18:06][interaction_serial_evaluator.py:253][INFO] [EVALUATOR]env 2 finish episode, final reward: 152.0000, current episode: 3
+[2023-07-20 14:18:06][interaction_serial_evaluator.py:253][INFO] [EVALUATOR]env 1 finish episode, final reward: 177.0000, current episode: 4
+[2023-07-20 14:18:07][interaction_serial_evaluator.py:253][INFO] [EVALUATOR]env 0 finish episode, final reward: 200.0000, current episode: 5
+[2023-07-20 14:18:07][interaction_serial_evaluator.py:279][INFO] 
 +-------+------------+----------------------+---------------+---------------+
 | Name  | train_iter | ckpt_name            | episode_count | envstep_count |
 +-------+------------+----------------------+---------------+---------------+
@@ -60,7 +60,7 @@
 +-------+-------------------------+---------------+---------------------+----------------------+
 | Name  | avg_envstep_per_episode | evaluate_time | avg_envstep_per_sec | avg_time_per_episode |
 +-------+-------------------------+---------------+---------------------+----------------------+
-| Value | 188.000000              | 5.859882      | 160.412790          | 0.853260             |
+| Value | 188.000000              | 3.818399      | 246.176492          | 1.309449             |
 +-------+-------------------------+---------------+---------------------+----------------------+
 +-------+-------------+------------+------------+------------+
 | Name  | reward_mean | reward_std | reward_max | reward_min |
@@ -69,12 +69,12 @@
 +-------+-------------+------------+------------+------------+
 
 
-[2023-07-20 11:09:00][interaction_serial_evaluator.py:253][INFO] [EVALUATOR]env 4 finish episode, final reward: 147.0000, current episode: 1
-[2023-07-20 11:09:02][interaction_serial_evaluator.py:253][INFO] [EVALUATOR]env 3 finish episode, final reward: 200.0000, current episode: 2
-[2023-07-20 11:09:03][interaction_serial_evaluator.py:253][INFO] [EVALUATOR]env 2 finish episode, final reward: 200.0000, current episode: 3
-[2023-07-20 11:09:04][interaction_serial_evaluator.py:253][INFO] [EVALUATOR]env 1 finish episode, final reward: 200.0000, current episode: 4
-[2023-07-20 11:09:04][interaction_serial_evaluator.py:253][INFO] [EVALUATOR]env 0 finish episode, final reward: 200.0000, current episode: 5
-[2023-07-20 11:09:05][interaction_serial_evaluator.py:279][INFO] 
+[2023-07-20 14:18:08][interaction_serial_evaluator.py:253][INFO] [EVALUATOR]env 4 finish episode, final reward: 147.0000, current episode: 1
+[2023-07-20 14:18:09][interaction_serial_evaluator.py:253][INFO] [EVALUATOR]env 3 finish episode, final reward: 200.0000, current episode: 2
+[2023-07-20 14:18:10][interaction_serial_evaluator.py:253][INFO] [EVALUATOR]env 2 finish episode, final reward: 200.0000, current episode: 3
+[2023-07-20 14:18:11][interaction_serial_evaluator.py:253][INFO] [EVALUATOR]env 1 finish episode, final reward: 200.0000, current episode: 4
+[2023-07-20 14:18:11][interaction_serial_evaluator.py:253][INFO] [EVALUATOR]env 0 finish episode, final reward: 200.0000, current episode: 5
+[2023-07-20 14:18:11][interaction_serial_evaluator.py:279][INFO] 
 +-------+------------+-----------------------+---------------+---------------+
 | Name  | train_iter | ckpt_name             | episode_count | envstep_count |
 +-------+------------+-----------------------+---------------+---------------+
@@ -83,7 +83,7 @@
 +-------+-------------------------+---------------+---------------------+----------------------+
 | Name  | avg_envstep_per_episode | evaluate_time | avg_envstep_per_sec | avg_time_per_episode |
 +-------+-------------------------+---------------+---------------------+----------------------+
-| Value | 200.000000              | 6.178537      | 161.850616          | 0.809253             |
+| Value | 200.000000              | 4.369311      | 228.869057          | 1.144345             |
 +-------+-------------------------+---------------+---------------------+----------------------+
 +-------+-------------+------------+------------+------------+
 | Name  | reward_mean | reward_std | reward_max | reward_min |
@@ -92,12 +92,12 @@
 +-------+-------------+------------+------------+------------+
 
 
-[2023-07-20 11:09:07][interaction_serial_evaluator.py:253][INFO] [EVALUATOR]env 4 finish episode, final reward: 200.0000, current episode: 1
-[2023-07-20 11:09:08][interaction_serial_evaluator.py:253][INFO] [EVALUATOR]env 3 finish episode, final reward: 200.0000, current episode: 2
-[2023-07-20 11:09:10][interaction_serial_evaluator.py:253][INFO] [EVALUATOR]env 2 finish episode, final reward: 200.0000, current episode: 3
-[2023-07-20 11:09:10][interaction_serial_evaluator.py:253][INFO] [EVALUATOR]env 1 finish episode, final reward: 200.0000, current episode: 4
-[2023-07-20 11:09:11][interaction_serial_evaluator.py:253][INFO] [EVALUATOR]env 0 finish episode, final reward: 200.0000, current episode: 5
-[2023-07-20 11:09:11][interaction_serial_evaluator.py:279][INFO] 
+[2023-07-20 14:18:13][interaction_serial_evaluator.py:253][INFO] [EVALUATOR]env 4 finish episode, final reward: 200.0000, current episode: 1
+[2023-07-20 14:18:14][interaction_serial_evaluator.py:253][INFO] [EVALUATOR]env 3 finish episode, final reward: 200.0000, current episode: 2
+[2023-07-20 14:18:15][interaction_serial_evaluator.py:253][INFO] [EVALUATOR]env 2 finish episode, final reward: 200.0000, current episode: 3
+[2023-07-20 14:18:16][interaction_serial_evaluator.py:253][INFO] [EVALUATOR]env 1 finish episode, final reward: 200.0000, current episode: 4
+[2023-07-20 14:18:16][interaction_serial_evaluator.py:253][INFO] [EVALUATOR]env 0 finish episode, final reward: 200.0000, current episode: 5
+[2023-07-20 14:18:16][interaction_serial_evaluator.py:279][INFO] 
 +-------+------------+-----------------------+---------------+---------------+
 | Name  | train_iter | ckpt_name             | episode_count | envstep_count |
 +-------+------------+-----------------------+---------------+---------------+
@@ -106,7 +106,7 @@
 +-------+-------------------------+---------------+---------------------+----------------------+
 | Name  | avg_envstep_per_episode | evaluate_time | avg_envstep_per_sec | avg_time_per_episode |
 +-------+-------------------------+---------------+---------------------+----------------------+
-| Value | 200.000000              | 6.159593      | 162.348392          | 0.811742             |
+| Value | 200.000000              | 4.307869      | 232.133351          | 1.160667             |
 +-------+-------------------------+---------------+---------------------+----------------------+
 +-------+-------------+------------+------------+------------+
 | Name  | reward_mean | reward_std | reward_max | reward_min |
@@ -115,4 +115,4 @@
 +-------+-------------+------------+------------+------------+
 
 
-[2023-07-20 11:09:11][interaction_serial_evaluator.py:303][INFO] [DI-engine serial pipeline] Current episode_return: 200.0000 is greater than stop_value: 195, so your RL agent is converged, you can refer to 'log/evaluator/evaluator_logger.txt' for details.
+[2023-07-20 14:18:16][interaction_serial_evaluator.py:303][INFO] [DI-engine serial pipeline] Current episode_return: 200.0000 is greater than stop_value: 195, so your RL agent is converged, you can refer to 'log/evaluator/evaluator_logger.txt' for details.
