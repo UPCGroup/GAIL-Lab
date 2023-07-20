@@ -13,8 +13,8 @@ cartpole_dqn_gail_config = dict(
     reward_model=dict(
         type='gail',
         input_size=5,
-        hidden_size=64,
-        batch_size=64,
+        hidden_size=100,
+        batch_size=100,
         learning_rate=1e-3,
         update_per_collect=100,
         # Users should add their own model path here. Model path should lead to a model.
@@ -23,7 +23,7 @@ cartpole_dqn_gail_config = dict(
         # If collect_data is True, we will use this expert_model_path to collect expert data first, rather than we
         # will load data directly from user-defined data_path
         expert_model_path='cartpole_dqn_seed0/ckpt/ckpt_best.pth.tar',
-        collect_count=1000,
+        collect_count=10000,
     ),
     policy=dict(
         cuda=False,

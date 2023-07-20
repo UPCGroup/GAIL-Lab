@@ -68,7 +68,7 @@ main_config = dict(
         ),
         eval=dict(
             evaluator=dict(
-                eval_freq=40,
+                eval_freq=10,
                 render={'render_freq': -1, 'mode': 'train_iter'},
                 cfg_type='InteractionSerialEvaluatorDict',
                 stop_value=195,

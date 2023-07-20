@@ -13,17 +13,17 @@ cartpole_ppo_gail_config = dict(
     reward_model=dict(
         type='gail',
         input_size=5,
-        hidden_size=100,
-        batch_size=100,
+        hidden_size=128,
+        batch_size=64,
         learning_rate=1e-3,
-        update_per_collect=100,
+        update_per_collect=128,
         # Users should add their own model path here. Model path should lead to a model.
         # Absolute path is recommended.
         # In DI-engine, it is ``exp_name/ckpt/ckpt_best.pth.tar``.
         # If collect_data is True, we will use this expert_model_path to collect expert data first, rather than we
         # will load data directly from user-defined data_path
         expert_model_path='cartpole_ppo_offpolicy_seed0/ckpt/ckpt_best.pth.tar',
-        collect_count=10000,
+        collect_count=1000,
     ),
     policy=dict(
         cuda=False,
@@ -50,7 +50,7 @@ cartpole_ppo_gail_config = dict(
             discount_factor=0.9,
             gae_lambda=0.95,
         ),
-        eval=dict(evaluator=dict(eval_freq=40, )),
+        eval=dict(evaluator=dict(eval_freq=10, )),
         other=dict(replay_buffer=dict(replay_buffer_size=5000))
     ),
 )

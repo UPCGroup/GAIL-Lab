@@ -67,7 +67,7 @@ exp_config = {
         },
         'eval': {
             'evaluator': {
-                'eval_freq': 40,
+                'eval_freq': 10,
                 'render': {
                     'render_freq': -1,
                     'mode': 'train_iter'
@@ -128,13 +128,13 @@ exp_config = {
     'reward_model': {
         'type': 'gail',
         'input_size': 5,
-        'hidden_size': 100,
-        'batch_size': 100,
+        'hidden_size': 128,
+        'batch_size': 64,
         'learning_rate': 0.001,
-        'update_per_collect': 100,
+        'update_per_collect': 128,
         'expert_model_path':
         'cartpole_ppo_offpolicy_seed0/ckpt/ckpt_best.pth.tar',
-        'collect_count': 10000
+        'collect_count': 1000
     },
     'seed': 0
 }
