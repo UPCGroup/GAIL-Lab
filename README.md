@@ -5,7 +5,7 @@
 ## 结果展示
 ### [`Cartpole-v0`](https://di-engine-docs.readthedocs.io/zh_CN/latest/13_envs/cartpole_zh.html#id5)训练图像
 
-<img src="Images\Cartpole-v0.png" width = "400" height = "300" alt="Cartpole-v0 Results of DQN-GAIL" align=center />
+<img src="Images\cartpole_dqn_gail.png" width = "400" height = "300" alt="Cartpole-v0 Results of DQN-GAIL" align=center />
 
 ***
 
