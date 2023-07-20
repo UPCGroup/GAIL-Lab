@@ -1,0 +1,36 @@
+[2023-07-19 20:42:29][sample_serial_collector.py:370][INFO] collect end:
+episode_count: 106
+envstep_count: 2459
+train_sample_count: 2365
+avg_envstep_per_episode: 23.19811320754717
+avg_sample_per_episode: 22.31132075471698
+avg_envstep_per_sec: 1956.42180209612
+avg_train_sample_per_sec: 1881.6338194214413
+avg_episode_per_sec: 84.33538471825487
+collect_time: 1.2568864226341248
+reward_mean: 23.19811320754717
+reward_std: 13.32285581270217
+reward_max: 96.0
+reward_min: 9.0
+total_envstep_count: 2688
+total_train_sample_count: 2530
+total_episode_count: 106
+total_duration: 1.2568864226341248
+[2023-07-19 20:42:32][sample_serial_collector.py:370][INFO] collect end:
+episode_count: 81
+envstep_count: 2489
+train_sample_count: 2376
+avg_envstep_per_episode: 30.728395061728396
+avg_sample_per_episode: 29.333333333333332
+avg_envstep_per_sec: 2298.3207410414952
+avg_train_sample_per_sec: 2193.977533432942
+avg_episode_per_sec: 74.79468863975939
+collect_time: 1.0829645991325378
+reward_mean: 30.728395061728396
+reward_std: 17.542197692800894
+reward_max: 93.0
+reward_min: 10.0
+total_envstep_count: 5096
+total_train_sample_count: 4831
+total_episode_count: 187
+total_duration: 2.3398510217666626

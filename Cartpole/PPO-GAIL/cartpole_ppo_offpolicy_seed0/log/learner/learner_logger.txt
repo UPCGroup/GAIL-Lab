@@ -1,0 +1,123 @@
+[2023-07-19 19:59:37][base_learner.py:338][INFO] [RANK0]: DI-engine DRL Policy
+VAC(
+  (encoder): FCEncoder(
+    (act): ReLU()
+    (init): Linear(in_features=4, out_features=64, bias=True)
+    (main): Sequential(
+      (0): Linear(in_features=64, out_features=64, bias=True)
+      (1): ReLU()
+      (2): Linear(in_features=64, out_features=128, bias=True)
+      (3): ReLU()
+    )
+  )
+  (critic_head): RegressionHead(
+    (main): Sequential(
+      (0): Linear(in_features=128, out_features=128, bias=True)
+      (1): ReLU()
+    )
+    (last): Linear(in_features=128, out_features=1, bias=True)
+  )
+  (actor_head): DiscreteHead(
+    (Q): Sequential(
+      (0): Sequential(
+        (0): Linear(in_features=128, out_features=128, bias=True)
+        (1): ReLU()
+      )
+      (1): Sequential(
+        (0): Linear(in_features=128, out_features=2, bias=True)
+      )
+    )
+  )
+  (actor): ModuleList(
+    (0): FCEncoder(
+      (act): ReLU()
+      (init): Linear(in_features=4, out_features=64, bias=True)
+      (main): Sequential(
+        (0): Linear(in_features=64, out_features=64, bias=True)
+        (1): ReLU()
+        (2): Linear(in_features=64, out_features=128, bias=True)
+        (3): ReLU()
+      )
+    )
+    (1): DiscreteHead(
+      (Q): Sequential(
+        (0): Sequential(
+          (0): Linear(in_features=128, out_features=128, bias=True)
+          (1): ReLU()
+        )
+        (1): Sequential(
+          (0): Linear(in_features=128, out_features=2, bias=True)
+        )
+      )
+    )
+  )
+  (critic): ModuleList(
+    (0): FCEncoder(
+      (act): ReLU()
+      (init): Linear(in_features=4, out_features=64, bias=True)
+      (main): Sequential(
+        (0): Linear(in_features=64, out_features=64, bias=True)
+        (1): ReLU()
+        (2): Linear(in_features=64, out_features=128, bias=True)
+        (3): ReLU()
+      )
+    )
+    (1): RegressionHead(
+      (main): Sequential(
+        (0): Linear(in_features=128, out_features=128, bias=True)
+        (1): ReLU()
+      )
+      (last): Linear(in_features=128, out_features=1, bias=True)
+    )
+  )
+)
+[2023-07-19 19:59:39][base_learner.py:338][INFO] [RANK0]: learner save ckpt in ./cartpole_ppo_offpolicy_seed0/ckpt\ckpt_best.pth.tar
+[2023-07-19 19:59:39][base_learner.py:338][INFO] [RANK0]: === Training Iteration 0 Result ===
+[2023-07-19 19:59:39][learner_hook.py:224][INFO] 
++-------+------------+----------------+-----------------+----------------+
+| Name  | cur_lr_avg | total_loss_avg | policy_loss_avg | value_loss_avg |
++-------+------------+----------------+-----------------+----------------+
+| Value | 0.001000   | 0.832768       | -4.169208       | 10.017794      |
++-------+------------+----------------+-----------------+----------------+
++-------+------------------+-----------------+---------------+--------------+
+| Name  | entropy_loss_avg | adv_abs_max_avg | approx_kl_avg | clipfrac_avg |
++-------+------------------+-----------------+---------------+--------------+
+| Value | 0.692077         | 6.166794        | 0.000000      | 0.000000     |
++-------+------------------+-----------------+---------------+--------------+
+
+
+[2023-07-19 19:59:39][base_learner.py:338][INFO] [RANK0]: learner save ckpt in ./cartpole_ppo_offpolicy_seed0/ckpt\iteration_0.pth.tar
+[2023-07-19 19:59:41][base_learner.py:338][INFO] [RANK0]: learner save ckpt in ./cartpole_ppo_offpolicy_seed0/ckpt\ckpt_best.pth.tar
+[2023-07-19 19:59:45][base_learner.py:338][INFO] [RANK0]: learner save ckpt in ./cartpole_ppo_offpolicy_seed0/ckpt\ckpt_best.pth.tar
+[2023-07-19 19:59:46][base_learner.py:338][INFO] [RANK0]: === Training Iteration 100 Result ===
+[2023-07-19 19:59:46][learner_hook.py:224][INFO] 
++-------+------------+----------------+-----------------+----------------+
+| Name  | cur_lr_avg | total_loss_avg | policy_loss_avg | value_loss_avg |
++-------+------------+----------------+-----------------+----------------+
+| Value | 0.001000   | -0.164993      | -2.740925       | 5.165464       |
++-------+------------+----------------+-----------------+----------------+
++-------+------------------+-----------------+---------------+--------------+
+| Name  | entropy_loss_avg | adv_abs_max_avg | approx_kl_avg | clipfrac_avg |
++-------+------------------+-----------------+---------------+--------------+
+| Value | 0.679994         | 6.066234        | 0.006326      | 0.085227     |
++-------+------------------+-----------------+---------------+--------------+
+
+
+[2023-07-19 19:59:52][base_learner.py:338][INFO] [RANK0]: learner save ckpt in ./cartpole_ppo_offpolicy_seed0/ckpt\ckpt_best.pth.tar
+[2023-07-19 19:59:52][base_learner.py:338][INFO] [RANK0]: === Training Iteration 200 Result ===
+[2023-07-19 19:59:52][learner_hook.py:224][INFO] 
++-------+------------+----------------+-----------------+----------------+
+| Name  | cur_lr_avg | total_loss_avg | policy_loss_avg | value_loss_avg |
++-------+------------+----------------+-----------------+----------------+
+| Value | 0.001000   | -0.400162      | -2.200985       | 3.615150       |
++-------+------------+----------------+-----------------+----------------+
++-------+------------------+-----------------+---------------+--------------+
+| Name  | entropy_loss_avg | adv_abs_max_avg | approx_kl_avg | clipfrac_avg |
++-------+------------------+-----------------+---------------+--------------+
+| Value | 0.675224         | 5.651230        | 0.008115      | 0.130682     |
++-------+------------------+-----------------+---------------+--------------+
+
+
+[2023-07-19 19:59:56][base_learner.py:338][INFO] [RANK0]: learner save ckpt in ./cartpole_ppo_offpolicy_seed0/ckpt\ckpt_best.pth.tar
+[2023-07-19 20:00:02][base_learner.py:338][INFO] [RANK0]: learner save ckpt in ./cartpole_ppo_offpolicy_seed0/ckpt\ckpt_best.pth.tar
+[2023-07-19 20:00:02][base_learner.py:338][INFO] [RANK0]: learner save ckpt in ./cartpole_ppo_offpolicy_seed0/ckpt\iteration_252.pth.tar

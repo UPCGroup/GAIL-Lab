@@ -1,0 +1,51 @@
+[2023-07-19 20:42:59][base_learner.py:338][INFO] [RANK0]: DI-engine DRL Policy
+DiscreteBC(
+  (encoder): FCEncoder(
+    (act): ReLU()
+    (init): Linear(in_features=4, out_features=100, bias=True)
+    (main): Sequential(
+      (0): Linear(in_features=100, out_features=2, bias=True)
+      (1): ReLU()
+      (2): Linear(in_features=2, out_features=100, bias=True)
+      (3): ReLU()
+    )
+  )
+  (head): DuelingHead(
+    (A): Sequential(
+      (0): Sequential(
+        (0): Linear(in_features=100, out_features=100, bias=True)
+        (1): ReLU()
+      )
+      (1): Sequential(
+        (0): Linear(in_features=100, out_features=2, bias=True)
+      )
+    )
+    (V): Sequential(
+      (0): Sequential(
+        (0): Linear(in_features=100, out_features=100, bias=True)
+        (1): ReLU()
+      )
+      (1): Sequential(
+        (0): Linear(in_features=100, out_features=1, bias=True)
+      )
+    )
+  )
+)
+[2023-07-19 20:43:02][base_learner.py:338][INFO] [RANK0]: learner save ckpt in ./cartpole_bc_seed0/ckpt\ckpt_best.pth.tar
+[2023-07-19 20:43:02][base_learner.py:338][INFO] [RANK0]: === Training Iteration 0 Result ===
+[2023-07-19 20:43:02][learner_hook.py:224][INFO] 
++-------+------------+----------------+------------------+-------------------+
+| Name  | cur_lr_avg | total_loss_avg | forward_time_avg | backward_time_avg |
++-------+------------+----------------+------------------+-------------------+
+| Value | 0.010000   | 0.691952       | 0.010969         | 0.009978          |
++-------+------------+----------------+------------------+-------------------+
++-------+---------------+
+| Name  | sync_time_avg |
++-------+---------------+
+| Value | 0.000000      |
++-------+---------------+
+
+[2023-07-19 20:43:02][base_learner.py:338][INFO] [RANK0]: learner save ckpt in ./cartpole_bc_seed0/ckpt\iteration_0.pth.tar
+[2023-07-19 20:43:06][base_learner.py:338][INFO] [RANK0]: learner save ckpt in ./cartpole_bc_seed0/ckpt\ckpt_best.pth.tar
+[2023-07-19 20:43:10][base_learner.py:338][INFO] [RANK0]: learner save ckpt in ./cartpole_bc_seed0/ckpt\ckpt_best.pth.tar
+[2023-07-19 20:43:10][base_learner.py:338][INFO] [RANK0]: learner save ckpt in ./cartpole_bc_seed0/ckpt\iteration_80.pth.tar

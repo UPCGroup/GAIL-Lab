@@ -1,0 +1,240 @@
+[2023-07-19 21:25:37][base_learner.py:338][INFO] [RANK0]: DI-engine DRL Policy
+VAC(
+  (encoder): FCEncoder(
+    (act): ReLU()
+    (init): Linear(in_features=4, out_features=64, bias=True)
+    (main): Sequential(
+      (0): Linear(in_features=64, out_features=64, bias=True)
+      (1): ReLU()
+      (2): Linear(in_features=64, out_features=128, bias=True)
+      (3): ReLU()
+    )
+  )
+  (critic_head): RegressionHead(
+    (main): Sequential(
+      (0): Linear(in_features=128, out_features=128, bias=True)
+      (1): ReLU()
+    )
+    (last): Linear(in_features=128, out_features=1, bias=True)
+  )
+  (actor_head): DiscreteHead(
+    (Q): Sequential(
+      (0): Sequential(
+        (0): Linear(in_features=128, out_features=128, bias=True)
+        (1): ReLU()
+      )
+      (1): Sequential(
+        (0): Linear(in_features=128, out_features=2, bias=True)
+      )
+    )
+  )
+  (actor): ModuleList(
+    (0): FCEncoder(
+      (act): ReLU()
+      (init): Linear(in_features=4, out_features=64, bias=True)
+      (main): Sequential(
+        (0): Linear(in_features=64, out_features=64, bias=True)
+        (1): ReLU()
+        (2): Linear(in_features=64, out_features=128, bias=True)
+        (3): ReLU()
+      )
+    )
+    (1): DiscreteHead(
+      (Q): Sequential(
+        (0): Sequential(
+          (0): Linear(in_features=128, out_features=128, bias=True)
+          (1): ReLU()
+        )
+        (1): Sequential(
+          (0): Linear(in_features=128, out_features=2, bias=True)
+        )
+      )
+    )
+  )
+  (critic): ModuleList(
+    (0): FCEncoder(
+      (act): ReLU()
+      (init): Linear(in_features=4, out_features=64, bias=True)
+      (main): Sequential(
+        (0): Linear(in_features=64, out_features=64, bias=True)
+        (1): ReLU()
+        (2): Linear(in_features=64, out_features=128, bias=True)
+        (3): ReLU()
+      )
+    )
+    (1): RegressionHead(
+      (main): Sequential(
+        (0): Linear(in_features=128, out_features=128, bias=True)
+        (1): ReLU()
+      )
+      (last): Linear(in_features=128, out_features=1, bias=True)
+    )
+  )
+)
+[2023-07-19 21:25:43][base_learner.py:338][INFO] [RANK0]: learner save ckpt in ./cartpole_ppo_gail_seed0/ckpt\ckpt_best.pth.tar
+[2023-07-19 21:25:43][base_learner.py:338][INFO] [RANK0]: === Training Iteration 0 Result ===
+[2023-07-19 21:25:43][learner_hook.py:224][INFO] 
++-------+------------+----------------+-----------------+----------------+
+| Name  | cur_lr_avg | total_loss_avg | policy_loss_avg | value_loss_avg |
++-------+------------+----------------+-----------------+----------------+
+| Value | 0.001000   | 0.825881       | -4.175751       | 10.017104      |
++-------+------------+----------------+-----------------+----------------+
++-------+------------------+-----------------+---------------+--------------+
+| Name  | entropy_loss_avg | adv_abs_max_avg | approx_kl_avg | clipfrac_avg |
++-------+------------------+-----------------+---------------+--------------+
+| Value | 0.692005         | 6.249585        | 0.000000      | 0.000000     |
++-------+------------------+-----------------+---------------+--------------+
+
+
+[2023-07-19 21:25:43][base_learner.py:338][INFO] [RANK0]: learner save ckpt in ./cartpole_ppo_gail_seed0/ckpt\iteration_0.pth.tar
+[2023-07-19 21:25:50][base_learner.py:338][INFO] [RANK0]: === Training Iteration 100 Result ===
+[2023-07-19 21:25:50][learner_hook.py:224][INFO] 
++-------+------------+----------------+-----------------+----------------+
+| Name  | cur_lr_avg | total_loss_avg | policy_loss_avg | value_loss_avg |
++-------+------------+----------------+-----------------+----------------+
+| Value | 0.001000   | -0.227739      | -2.751085       | 5.060481       |
++-------+------------+----------------+-----------------+----------------+
++-------+------------------+-----------------+---------------+--------------+
+| Name  | entropy_loss_avg | adv_abs_max_avg | approx_kl_avg | clipfrac_avg |
++-------+------------------+-----------------+---------------+--------------+
+| Value | 0.689420         | 5.964584        | 0.002840      | 0.021307     |
++-------+------------------+-----------------+---------------+--------------+
+
+
+[2023-07-19 21:25:55][base_learner.py:338][INFO] [RANK0]: learner save ckpt in ./cartpole_ppo_gail_seed0/ckpt\ckpt_best.pth.tar
+[2023-07-19 21:25:57][base_learner.py:338][INFO] [RANK0]: === Training Iteration 200 Result ===
+[2023-07-19 21:25:57][learner_hook.py:224][INFO] 
++-------+------------+----------------+-----------------+----------------+
+| Name  | cur_lr_avg | total_loss_avg | policy_loss_avg | value_loss_avg |
++-------+------------+----------------+-----------------+----------------+
+| Value | 0.001000   | -0.305657      | -2.077131       | 3.556650       |
++-------+------------+----------------+-----------------+----------------+
++-------+------------------+-----------------+---------------+--------------+
+| Name  | entropy_loss_avg | adv_abs_max_avg | approx_kl_avg | clipfrac_avg |
++-------+------------------+-----------------+---------------+--------------+
+| Value | 0.685146         | 5.751863        | 0.007450      | 0.100852     |
++-------+------------------+-----------------+---------------+--------------+
+
+
+[2023-07-19 21:25:58][base_learner.py:338][INFO] [RANK0]: learner save ckpt in ./cartpole_ppo_gail_seed0/ckpt\ckpt_best.pth.tar
+[2023-07-19 21:26:01][base_learner.py:338][INFO] [RANK0]: learner save ckpt in ./cartpole_ppo_gail_seed0/ckpt\ckpt_best.pth.tar
+[2023-07-19 21:26:05][base_learner.py:338][INFO] [RANK0]: === Training Iteration 300 Result ===
+[2023-07-19 21:26:05][learner_hook.py:224][INFO] 
++-------+------------+----------------+-----------------+----------------+
+| Name  | cur_lr_avg | total_loss_avg | policy_loss_avg | value_loss_avg |
++-------+------------+----------------+-----------------+----------------+
+| Value | 0.001000   | -0.533506      | -1.502237       | 1.950993       |
++-------+------------+----------------+-----------------+----------------+
++-------+------------------+-----------------+---------------+--------------+
+| Name  | entropy_loss_avg | adv_abs_max_avg | approx_kl_avg | clipfrac_avg |
++-------+------------------+-----------------+---------------+--------------+
+| Value | 0.676478         | 3.941432        | 0.011564      | 0.237216     |
++-------+------------------+-----------------+---------------+--------------+
+
+
+[2023-07-19 21:26:12][base_learner.py:338][INFO] [RANK0]: === Training Iteration 400 Result ===
+[2023-07-19 21:26:12][learner_hook.py:224][INFO] 
++-------+------------+----------------+-----------------+----------------+
+| Name  | cur_lr_avg | total_loss_avg | policy_loss_avg | value_loss_avg |
++-------+------------+----------------+-----------------+----------------+
+| Value | 0.001000   | -0.493233      | -1.151757       | 1.330329       |
++-------+------------+----------------+-----------------+----------------+
++-------+------------------+-----------------+---------------+--------------+
+| Name  | entropy_loss_avg | adv_abs_max_avg | approx_kl_avg | clipfrac_avg |
++-------+------------------+-----------------+---------------+--------------+
+| Value | 0.663971         | 3.620897        | 0.009910      | 0.214489     |
++-------+------------------+-----------------+---------------+--------------+
+
+
+[2023-07-19 21:26:14][base_learner.py:338][INFO] [RANK0]: learner save ckpt in ./cartpole_ppo_gail_seed0/ckpt\ckpt_best.pth.tar
+[2023-07-19 21:26:20][base_learner.py:338][INFO] [RANK0]: === Training Iteration 500 Result ===
+[2023-07-19 21:26:20][learner_hook.py:224][INFO] 
++-------+------------+----------------+-----------------+----------------+
+| Name  | cur_lr_avg | total_loss_avg | policy_loss_avg | value_loss_avg |
++-------+------------+----------------+-----------------+----------------+
+| Value | 0.001000   | -0.416750      | -0.974259       | 1.127057       |
++-------+------------+----------------+-----------------+----------------+
++-------+------------------+-----------------+---------------+--------------+
+| Name  | entropy_loss_avg | adv_abs_max_avg | approx_kl_avg | clipfrac_avg |
++-------+------------------+-----------------+---------------+--------------+
+| Value | 0.601932         | 3.858146        | 0.028681      | 0.386364     |
++-------+------------------+-----------------+---------------+--------------+
+
+
+[2023-07-19 21:26:24][base_learner.py:338][INFO] [RANK0]: learner save ckpt in ./cartpole_ppo_gail_seed0/ckpt\ckpt_best.pth.tar
+[2023-07-19 21:26:28][base_learner.py:338][INFO] [RANK0]: === Training Iteration 600 Result ===
+[2023-07-19 21:26:28][learner_hook.py:224][INFO] 
++-------+------------+----------------+-----------------+----------------+
+| Name  | cur_lr_avg | total_loss_avg | policy_loss_avg | value_loss_avg |
++-------+------------+----------------+-----------------+----------------+
+| Value | 0.001000   | -0.489709      | -0.959846       | 0.951844       |
++-------+------------+----------------+-----------------+----------------+
++-------+------------------+-----------------+---------------+--------------+
+| Name  | entropy_loss_avg | adv_abs_max_avg | approx_kl_avg | clipfrac_avg |
++-------+------------------+-----------------+---------------+--------------+
+| Value | 0.578517         | 3.509625        | 0.023760      | 0.301136     |
++-------+------------------+-----------------+---------------+--------------+
+
+
+[2023-07-19 21:26:31][base_learner.py:338][INFO] [RANK0]: learner save ckpt in ./cartpole_ppo_gail_seed0/ckpt\ckpt_best.pth.tar
+[2023-07-19 21:26:36][base_learner.py:338][INFO] [RANK0]: === Training Iteration 700 Result ===
+[2023-07-19 21:26:36][learner_hook.py:224][INFO] 
++-------+------------+----------------+-----------------+----------------+
+| Name  | cur_lr_avg | total_loss_avg | policy_loss_avg | value_loss_avg |
++-------+------------+----------------+-----------------+----------------+
+| Value | 0.001000   | -0.409316      | -0.820015       | 0.832507       |
++-------+------------+----------------+-----------------+----------------+
++-------+------------------+-----------------+---------------+--------------+
+| Name  | entropy_loss_avg | adv_abs_max_avg | approx_kl_avg | clipfrac_avg |
++-------+------------------+-----------------+---------------+--------------+
+| Value | 0.555490         | 4.242267        | 0.033146      | 0.346591     |
++-------+------------------+-----------------+---------------+--------------+
+
+
+[2023-07-19 21:26:45][base_learner.py:338][INFO] [RANK0]: === Training Iteration 800 Result ===
+[2023-07-19 21:26:45][learner_hook.py:224][INFO] 
++-------+------------+----------------+-----------------+----------------+
+| Name  | cur_lr_avg | total_loss_avg | policy_loss_avg | value_loss_avg |
++-------+------------+----------------+-----------------+----------------+
+| Value | 0.001000   | -0.426113      | -0.639639       | 0.437766       |
++-------+------------+----------------+-----------------+----------------+
++-------+------------------+-----------------+---------------+--------------+
+| Name  | entropy_loss_avg | adv_abs_max_avg | approx_kl_avg | clipfrac_avg |
++-------+------------------+-----------------+---------------+--------------+
+| Value | 0.535739         | 3.143979        | 0.030288      | 0.271307     |
++-------+------------------+-----------------+---------------+--------------+
+
+
+[2023-07-19 21:26:51][base_learner.py:338][INFO] [RANK0]: learner save ckpt in ./cartpole_ppo_gail_seed0/ckpt\ckpt_best.pth.tar
+[2023-07-19 21:26:52][base_learner.py:338][INFO] [RANK0]: === Training Iteration 900 Result ===
+[2023-07-19 21:26:52][learner_hook.py:224][INFO] 
++-------+------------+----------------+-----------------+----------------+
+| Name  | cur_lr_avg | total_loss_avg | policy_loss_avg | value_loss_avg |
++-------+------------+----------------+-----------------+----------------+
+| Value | 0.001000   | -0.262153      | -0.413230       | 0.312525       |
++-------+------------+----------------+-----------------+----------------+
++-------+------------------+-----------------+---------------+--------------+
+| Name  | entropy_loss_avg | adv_abs_max_avg | approx_kl_avg | clipfrac_avg |
++-------+------------------+-----------------+---------------+--------------+
+| Value | 0.518604         | 3.386464        | 0.022700      | 0.247159     |
++-------+------------------+-----------------+---------------+--------------+
+
+
+[2023-07-19 21:27:00][base_learner.py:338][INFO] [RANK0]: === Training Iteration 1000 Result ===
+[2023-07-19 21:27:00][learner_hook.py:224][INFO] 
++-------+------------+----------------+-----------------+----------------+
+| Name  | cur_lr_avg | total_loss_avg | policy_loss_avg | value_loss_avg |
++-------+------------+----------------+-----------------+----------------+
+| Value | 0.001000   | -0.077025      | -0.262240       | 0.380344       |
++-------+------------+----------------+-----------------+----------------+
++-------+------------------+-----------------+---------------+--------------+
+| Name  | entropy_loss_avg | adv_abs_max_avg | approx_kl_avg | clipfrac_avg |
++-------+------------------+-----------------+---------------+--------------+
+| Value | 0.495743         | 4.606503        | 0.021687      | 0.230114     |
++-------+------------------+-----------------+---------------+--------------+
+
+
+[2023-07-19 21:27:00][base_learner.py:338][INFO] [RANK0]: learner save ckpt in ./cartpole_ppo_gail_seed0/ckpt\iteration_1000.pth.tar
+[2023-07-19 21:27:01][base_learner.py:338][INFO] [RANK0]: learner save ckpt in ./cartpole_ppo_gail_seed0/ckpt\ckpt_best.pth.tar
+[2023-07-19 21:27:04][base_learner.py:338][INFO] [RANK0]: learner save ckpt in ./cartpole_ppo_gail_seed0/ckpt\ckpt_best.pth.tar
+[2023-07-19 21:27:04][base_learner.py:338][INFO] [RANK0]: learner save ckpt in ./cartpole_ppo_gail_seed0/ckpt\iteration_1050.pth.tar
